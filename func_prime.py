@@ -1,4 +1,5 @@
 def func_prime(num):
+    global x
     for x in range(2, num + 1):
         num_of_complete_divisions = 0
         for y in range(2, x):
@@ -7,4 +8,6 @@ def func_prime(num):
         if num_of_complete_divisions == 0:
             print(str(x) + " is a prime number")
 
-func_prime(9)
+func_prime(11)
+
+print(str(x) + " is a variable")
